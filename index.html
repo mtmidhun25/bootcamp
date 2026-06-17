@@ -13,7 +13,7 @@
         <h1>My Portfolio</h1>
         <p>Welcome to my portfolio page.</p>
     </header> -->
-    <header class="navbar">
+<header class="navbar">
 
     <h2>Portfolio</h2>
 
@@ -23,12 +23,14 @@
 
     <nav id="navLinks">
         <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <button onclick="toggleTheme()">🌙</button>
+    <button class="theme-btn" onclick="toggleTheme()">
+        🌙
+    </button>
 
 </header>
 
@@ -36,7 +38,7 @@
         <div>
             <h2>Midhun T Manoj</h2>
             <p>
-                MCA Student passionate about Python,
+                MCA graduate passionate about Python,
                 Web Development and Machine Learning.
             </p>
 
@@ -48,7 +50,7 @@
         <img src="cool-cat.png" alt="Profile">
     </section>
 
-    <section class="card">
+    <section id="about" class="card">
         <h2>About Me</h2>
 
         <p>
@@ -58,7 +60,7 @@
         </p>
     </section>
 
-    <section class="card">
+    <section id="skills" class="card">
         <h2>Skills</h2>
 
         <ul>
@@ -71,15 +73,29 @@
         </ul>
     </section>
 
-    <section class="card contact">
-        <h2>Contact Me</h2>
+    <section id="contact" class="card contact">
+    <h2>Contact Me</h2>
 
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <button>Send Message</button>
-        </form>
-    </section>
+    <form id="contactForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            required>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+</section>
 
      <script src="script.js"></script>
 

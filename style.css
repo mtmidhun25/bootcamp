@@ -29,6 +29,7 @@ header h1{
 header p{
     margin-top:8px;
 }
+
 .navbar{
     display:flex;
     justify-content:space-between;
@@ -45,12 +46,22 @@ header p{
 .navbar nav a{
     text-decoration:none;
     color:#1e3a5f;
-    font-weight:500;
 }
 
 .menu-btn{
     display:none;
     font-size:28px;
+    cursor:pointer;
+}
+
+.theme-btn{
+    width:auto;
+    padding:10px 15px;
+    margin:0;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
     cursor:pointer;
 }
 
@@ -62,7 +73,7 @@ header p{
     margin:0;
     border:none;
     border-radius:8px;
-    background:#2563eb;
+    background:#0e3e9e;
     color:white;
     cursor:pointer;
 }
